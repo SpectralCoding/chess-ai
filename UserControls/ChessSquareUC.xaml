@@ -4,6 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" xmlns:my="clr-namespace:ChessAI.UserControls" Width="75" Height="75">
-    <Grid Background="White"/>
+             d:DesignHeight="300" d:DesignWidth="300" xmlns:my="clr-namespace:ChessAI.UserControls" Width="75" Height="75" DataContextChanged="UserControl_DataContextChanged">
+	<Grid Background="{Binding Path=SquareColor}">
+		<Label x:Name="CoordLbl" Content="X0" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="13.333" Margin="0,0,43,55" Height="20" Width="37"/>
+		<Label x:Name="IndexLbl" Content="[0][0]" Padding="0,0,5,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="13.333" Margin="38,0,0,55" Height="20" Width="37"/>
+		<my:ChessPiece Margin="0"/>
+	</Grid>
 </UserControl>

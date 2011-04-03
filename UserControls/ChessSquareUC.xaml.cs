@@ -11,18 +11,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ChessAI.ViewModel;
 
 namespace ChessAI.UserControls {
 	/// <summary>
 	/// Interaction logic for ChessSquare.xaml
 	/// </summary>
 	public partial class ChessSquare : UserControl {
+
 		public ChessSquare() {
 			InitializeComponent();
 		}
 
-		public void SetColor(Color i_Color) {
-			
+		private void UserControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e) {
+			if (DataContext is ChessSquareViewModel) {
+				ChessSquareViewModel tempCSVM = (ChessSquareViewModel)DataContext;
+				CoordLbl.Content = tempCSVM.RankStr + tempCSVM.FileStr;
+				IndexLbl.Content = String.Format("[{0}][{1}]", tempCSVM.Rank, tempCSVM.File);
+			}
 		}
 
 	}

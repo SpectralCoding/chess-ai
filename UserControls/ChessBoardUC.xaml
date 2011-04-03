@@ -3,72 +3,105 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="440" d:DesignWidth="592" xmlns:my="clr-namespace:ChessAI.UserControls" Width="600" Height="600" BorderThickness="1" BorderBrush="Black" DataContextChanged="UserControl_DataContextChanged">
-    <Grid d:IsLocked="True">
-    	<my:ChessSquare x:Name="ChessSquareA8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height, HorizontalMargin" Margin="300,0,0,0" Width="75" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF8" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left" Margin="375,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="450,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="525,0,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,75,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,75,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,75,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,75,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,75,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF7" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,75,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,75,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,75,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,150,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,150,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,150,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,150,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF6" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,150,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,150,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,150,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,225,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,225,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,225,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,225,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,225,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,225,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,225,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,225,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,300,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,300,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,300,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,300,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,300,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF4" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,300,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,300,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,300,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,375,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,375,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,375,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,375,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,375,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,375,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,375,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,375,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,450,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,450,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,450,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,450,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,450,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,450,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,450,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,450,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareA1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,525,0,0" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareB1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,525,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareC1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,525,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareD1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,525,0,0" d:LayoutOverrides="Width, Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareE1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,525,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareF1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,525,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareG1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,525,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    	<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,525,0,0" d:LayoutOverrides="Height" d:IsLocked="True"/>
-    </Grid>
+             mc:Ignorable="d" xmlns:my="clr-namespace:ChessAI.UserControls" Width="660" Height="670" BorderBrush="Black" DataContextChanged="UserControl_DataContextChanged">
+    <Grid>
+		<Grid Width="600" Height="600" Background="White" Margin="30,32,0,0" HorizontalAlignment="Left" d:LayoutOverrides="Width, Height" VerticalAlignment="Top">
+			<my:ChessSquare x:Name="ChessSquareA8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareB8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height, HorizontalMargin" Margin="300,0,0,0" Width="75"/>
+			<my:ChessSquare x:Name="ChessSquareF8" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left" Margin="375,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="450,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="525,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareA7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,75,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,75,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,75,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,75,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF7" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,75,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,75,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,75,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,150,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,150,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,150,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF6" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,150,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,150,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,150,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,225,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,225,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,225,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,225,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,225,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,225,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,225,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,300,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,300,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,300,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,300,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF4" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,300,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,300,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,300,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,375,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,375,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,375,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,375,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,375,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,375,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,375,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,450,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,450,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,450,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,450,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,450,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,450,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,450,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareA1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareB1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,525,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareC1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,525,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareD1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,525,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessSquare x:Name="ChessSquareE1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,525,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
+			<my:ChessSquare x:Name="ChessSquareF1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,525,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareG1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,525,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,525,0,0" d:LayoutOverrides="Height"/>
+		</Grid>
+		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,32,0,0"/>
+		<Label Content="a" HorizontalAlignment="Left" Margin="30,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,107,0,0"/>
+		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,182,0,0"/>
+		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,257,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,332,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,407,0,0"/>
+		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,482,0,0"/>
+		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,557,0,0"/>
+		<Label Content="b" HorizontalAlignment="Left" Margin="105,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="c" HorizontalAlignment="Left" Margin="180,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="d" HorizontalAlignment="Left" Margin="255,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="e" Margin="330,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
+		<Label Content="f" HorizontalAlignment="Left" Margin="405,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="g" HorizontalAlignment="Left" Margin="480,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="h" HorizontalAlignment="Left" Margin="555,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,32,0,0"/>
+		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,107,0,0"/>
+		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,182,0,0"/>
+		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,257,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,332,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,407,0,0"/>
+		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,482,0,0"/>
+		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,557,0,0"/>
+		<Label Content="a" HorizontalAlignment="Left" Margin="30,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="b" HorizontalAlignment="Left" Margin="105,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="c" HorizontalAlignment="Left" Margin="180,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="e" HorizontalAlignment="Left" Margin="255,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="r" Margin="330,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
+		<Label Content="f" HorizontalAlignment="Left" Margin="405,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="g" HorizontalAlignment="Left" Margin="480,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="h" HorizontalAlignment="Left" Margin="555,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+	</Grid>
 </UserControl>

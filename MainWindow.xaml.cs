@@ -28,9 +28,5 @@ namespace ChessAI {
 			ChessBoard.DataContext = MasterViewModel.ChessBoardVM;
 		}
 
-		private void button1_Click(object sender, RoutedEventArgs e) {
-			Console.WriteLine(DataContext);
-		}
-
 	}
 }

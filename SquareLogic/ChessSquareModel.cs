@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Media;
 
 namespace ChessAI.SquareLogic {
 	public class ChessSquareModel {
@@ -12,14 +13,29 @@ namespace ChessAI.SquareLogic {
 		public string FileStr;
 		public string RankStr;
 		public bool IsWhite;
+		public Brush SquareColor;
 		#endregion
 
 		public ChessSquareModel(int i_File, int i_Rank) {
 			File = i_File;
 			Rank = i_Rank;
-			FileStr = Functions.FileIndexToLetter(File);
-			RankStr = i_Rank.ToString();
+			if ((File > 1) && (File < 10)) {
+				FileStr = Functions.FileIndexToLetter(File);
+			} else {
+				FileStr = "X";
+			}
+			if ((Rank > 1) && (Rank < 10)) {
+				RankStr = (i_Rank - 1).ToString();
+			} else {
+				RankStr = "0";
+			}
 			IsWhite = Functions.IsWhite(File, Rank);
+			if (IsWhite) {
+				SquareColor = new SolidColorBrush(Color.FromArgb(255, 255, 206, 158));
+				
+			} else {
+				SquareColor = new SolidColorBrush(Color.FromArgb(255, 209, 139, 71));
+			}
 		}
 
 	}

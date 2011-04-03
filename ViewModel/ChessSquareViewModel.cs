@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Media;
 using ChessAI.SquareLogic;
 
 namespace ChessAI.ViewModel {
-	public class ChessSquareViewModel {
+	public class ChessSquareViewModel : ViewModelBase {
 
 		private ChessSquareModel m_ChessSquareModel;
+		private ChessPieceViewModel m_ChessPieceVM;
 
 		#region Public Properties
 		public int File {
@@ -24,6 +26,12 @@ namespace ChessAI.ViewModel {
 		}
 		public bool IsWhite {
 			get { return m_ChessSquareModel.IsWhite; }
+		}
+		public Brush SquareColor {
+			get { return m_ChessSquareModel.SquareColor; }
+		}
+		public ChessPieceViewModel ChessPieceVM {
+			get { return m_ChessPieceVM; }
 		}
 		#endregion
 

@@ -7,11 +7,10 @@
 		xmlns:piecelogic="clr-namespace:ChessAI.PieceLogic"
 		xmlns:squarelogic="clr-namespace:ChessAI.SquareLogic"
         Title="MainWindow"
-		Height="702"
-		Width="993"
+		Height="733"
+		Width="1002"
 		>
     <Grid>
-		<my:ChessBoard HorizontalAlignment="Left" Margin="12,12,0,0" x:Name="ChessBoard" VerticalAlignment="Top" Height="600" Width="600" />
-		<Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="742,125,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+		<my:ChessBoard HorizontalAlignment="Left" Margin="12,12,0,0" x:Name="ChessBoard" VerticalAlignment="Top" Height="670" Width="660" />
 	</Grid>
 </Window>
