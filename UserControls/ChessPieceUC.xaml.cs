@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ChessAI.ViewModel;
 
 namespace ChessAI.UserControls {
 	/// <summary>
@@ -19,6 +20,12 @@ namespace ChessAI.UserControls {
 	public partial class ChessPiece : UserControl {
 		public ChessPiece() {
 			InitializeComponent();
+		}
+
+		private void UserControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e) {
+			if (DataContext is ChessPieceViewModel) {
+				Console.WriteLine(DataContext);
+			}
 		}
 	}
 }

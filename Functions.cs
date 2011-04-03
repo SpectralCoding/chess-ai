@@ -11,15 +11,15 @@ namespace ChessAI {
 		public static bool IsWhite(int File, int Rank) {
 			if ((Rank % 2) == 0) {
 				if ((File % 2) == 0) {
-					return true;
-				} else {
 					return false;
+				} else {
+					return true;
 				}
 			} else {
 				if ((File % 2) == 0) {
-					return false;
-				} else {
 					return true;
+				} else {
+					return false;
 				}
 			}
 		}

@@ -13,7 +13,7 @@ namespace ChessAI {
 		Pawn
 	}
 
-	public enum PlayerSize {
+	public enum PieceColor {
 		White,
 		Black
 	}

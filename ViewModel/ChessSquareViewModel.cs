@@ -32,6 +32,10 @@ namespace ChessAI.ViewModel {
 		}
 		public ChessPieceViewModel ChessPieceVM {
 			get { return m_ChessPieceVM; }
+			set {
+				m_ChessPieceVM = value;
+				OnPropertyChanged("ChessPieceVM");
+			}
 		}
 		#endregion
 
