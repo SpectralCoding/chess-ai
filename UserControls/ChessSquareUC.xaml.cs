@@ -11,25 +11,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ChessAI.ViewModel;
 
-namespace ChessAI {
+namespace ChessAI.UserControls {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for ChessSquare.xaml
 	/// </summary>
-	public partial class MainWindow : Window {
-
-		private MasterViewModel MasterViewModel;
-
-		public MainWindow(MasterViewModel MVM) {
-			MasterViewModel = MVM;
-			DataContext = MasterViewModel;
+	public partial class ChessSquare : UserControl {
+		public ChessSquare() {
 			InitializeComponent();
-			ChessBoard.DataContext = MasterViewModel.ChessBoardVM;
 		}
 
-		private void button1_Click(object sender, RoutedEventArgs e) {
-			Console.WriteLine(DataContext);
+		public void SetColor(Color i_Color) {
+			
 		}
 
 	}
