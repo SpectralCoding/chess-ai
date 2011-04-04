@@ -28,7 +28,6 @@ namespace ChessAI.UserControls {
 				ChessSquareViewModel tempCSVM = (ChessSquareViewModel)DataContext;
 				CoordLbl.Content = tempCSVM.RankStr + tempCSVM.FileStr;
 				IndexLbl.Content = String.Format("[{0}][{1}]", tempCSVM.File, tempCSVM.Rank);
-				ChessPiece.DataContext = tempCSVM.ChessPieceVM;
 			}
 		}
 

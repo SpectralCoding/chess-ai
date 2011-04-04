@@ -8,6 +8,5 @@
 	<Grid Background="{Binding Path=SquareColor}">
 		<Label x:Name="CoordLbl" Content="X0" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="13.333" Margin="0,0,43,55" Height="20" Width="37"/>
 		<Label x:Name="IndexLbl" Content="[0][0]" Padding="0,0,5,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="13.333" Margin="38,0,0,55" Height="20" Width="37"/>
-		<my:ChessPiece Margin="0" x:Name="ChessPiece" />
 	</Grid>
 </UserControl>

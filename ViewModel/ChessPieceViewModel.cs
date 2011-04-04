@@ -21,6 +21,12 @@ namespace ChessAI.ViewModel {
 		public string ResourceURI {
 			get { return m_ChessPieceModel.ResourceURI; }
 		}
+		public int File {
+			get { return m_ChessPieceModel.File; }
+		}
+		public int Rank {
+			get { return m_ChessPieceModel.Rank; }
+		}
 
 		public ChessPieceViewModel(ChessPiece i_ChessPiece, PieceColor i_PieceColor, PieceSide i_PieceSide) {
 			m_ChessPieceModel = new ChessPieceModel(i_ChessPiece, i_PieceColor, i_PieceSide);

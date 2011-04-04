@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" xmlns:my="clr-namespace:ChessAI.UserControls" Width="660" Height="670" BorderBrush="Black" DataContextChanged="UserControl_DataContextChanged">
     <Grid>
-		<Grid Width="600" Height="600" Background="White" Margin="30,32,0,0" HorizontalAlignment="Left" d:LayoutOverrides="Width, Height" VerticalAlignment="Top">
+		<Grid x:Name="SquareGrid" Width="600" Height="600" Background="White" Margin="30,35,0,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" VerticalAlignment="Top">
 			<my:ChessSquare x:Name="ChessSquareA8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
 			<my:ChessSquare x:Name="ChessSquareB8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,0,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareC8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,0,0,0"/>
@@ -71,30 +71,64 @@
 			<my:ChessSquare x:Name="ChessSquareG1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,525,0,0" d:LayoutOverrides="Height"/>
 			<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,525,0,0" d:LayoutOverrides="Height"/>
 		</Grid>
-		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,32,0,0"/>
-		<Label Content="a" HorizontalAlignment="Left" Margin="30,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,107,0,0"/>
-		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,182,0,0"/>
-		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,257,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,332,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,407,0,0"/>
-		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,482,0,0"/>
-		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,557,0,0"/>
-		<Label Content="b" HorizontalAlignment="Left" Margin="105,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="c" HorizontalAlignment="Left" Margin="180,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="d" HorizontalAlignment="Left" Margin="255,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="e" Margin="330,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
-		<Label Content="f" HorizontalAlignment="Left" Margin="405,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="g" HorizontalAlignment="Left" Margin="480,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="h" HorizontalAlignment="Left" Margin="555,-5,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,32,0,0"/>
-		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,107,0,0"/>
-		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,182,0,0"/>
-		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,257,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,332,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,407,0,0"/>
-		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,482,0,0"/>
-		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,557,0,0"/>
+		<Grid x:Name="PieceGrid" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="600" Margin="30,35,0,0">
+			<my:ChessPiece x:Name="BlackQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin"/>
+			<my:ChessPiece x:Name="BlackQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="75,0,0,0"/>
+			<my:ChessPiece x:Name="BlackQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="150,0,0,0"/>
+			<my:ChessPiece x:Name="BlackQueenCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="225,0,0,0"/>
+			<my:ChessPiece x:Name="BlackKingCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,225,0"/>
+			<my:ChessPiece x:Name="BlackKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,150,0"/>
+			<my:ChessPiece x:Name="BlackKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,75,0"/>
+			<my:ChessPiece x:Name="BlackKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin"/>
+			<my:ChessPiece x:Name="BlackQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,75,0,0"/>
+			<my:ChessPiece x:Name="BlackQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,75,0,0"/>
+			<my:ChessPiece x:Name="BlackQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,75,0,0"/>
+			<my:ChessPiece x:Name="BlackQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,75,0,0"/>
+			<my:ChessPiece x:Name="BlackKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,225,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="BlackKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,150,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="BlackKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,75,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="BlackKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,0,0" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="150,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteQueenCP" VerticalAlignment="Bottom" Margin="225,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin" HorizontalAlignment="Left"/>
+			<my:ChessPiece x:Name="WhiteKingCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,150,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,75,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece x:Name="WhiteQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="150,0,0,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="225,0,0,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,150,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,75,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece x:Name="WhiteKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,75" d:LayoutOverrides="Width, Height"/>
+		</Grid>
+		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,34.667,0,0"/>
+		<Label Content="a" HorizontalAlignment="Left" Margin="30,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,109.667,0,0"/>
+		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,184.667,0,0"/>
+		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,259.667,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,334.667,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,409.667,0,0"/>
+		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,484.667,0,0"/>
+		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,559.667,0,0"/>
+		<Label Content="b" HorizontalAlignment="Left" Margin="105,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="c" HorizontalAlignment="Left" Margin="180,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="d" HorizontalAlignment="Left" Margin="255,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="e" Margin="330,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
+		<Label Content="f" HorizontalAlignment="Left" Margin="405,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="g" HorizontalAlignment="Left" Margin="480,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="h" HorizontalAlignment="Left" Margin="555,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,34.667,0,0"/>
+		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,109.667,0,0"/>
+		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,184.667,0,0"/>
+		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,259.667,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,334.667,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,409.667,0,0"/>
+		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,484.667,0,0"/>
+		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,559.667,0,0"/>
 		<Label Content="a" HorizontalAlignment="Left" Margin="30,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 		<Label Content="b" HorizontalAlignment="Left" Margin="105,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 		<Label Content="c" HorizontalAlignment="Left" Margin="180,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>

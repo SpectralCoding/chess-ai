@@ -24,7 +24,7 @@ namespace ChessAI.UserControls {
 
 		private void UserControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e) {
 			if (DataContext is ChessPieceViewModel) {
-				Console.WriteLine(DataContext);
+				//Console.WriteLine(DataContext);
 			}
 		}
 	}

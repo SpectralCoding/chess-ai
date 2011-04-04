@@ -9,7 +9,6 @@ namespace ChessAI.ViewModel {
 	public class ChessSquareViewModel : ViewModelBase {
 
 		private ChessSquareModel m_ChessSquareModel;
-		private ChessPieceViewModel m_ChessPieceVM;
 
 		#region Public Properties
 		public int File {
@@ -29,13 +28,6 @@ namespace ChessAI.ViewModel {
 		}
 		public Brush SquareColor {
 			get { return m_ChessSquareModel.SquareColor; }
-		}
-		public ChessPieceViewModel ChessPieceVM {
-			get { return m_ChessPieceVM; }
-			set {
-				m_ChessPieceVM = value;
-				OnPropertyChanged("ChessPieceVM");
-			}
 		}
 		#endregion
 

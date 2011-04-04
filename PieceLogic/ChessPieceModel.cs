@@ -9,6 +9,8 @@ namespace ChessAI.PieceLogic {
 		public ChessPiece ChessPiece;
 		public PieceColor PieceColor;
 		public PieceSide PieceSide;
+		public int Rank;
+		public int File;
 		public string ResourceURI;
 
 		public ChessPieceModel(ChessPiece i_ChessPiece, PieceColor i_PieceColor, PieceSide i_PieceSide) {
