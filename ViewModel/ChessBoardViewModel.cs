@@ -30,7 +30,7 @@ namespace ChessAI.ViewModel {
 		public ChessBoardViewModel() {
 			InitializePieces();
 			InitializeSquares();
-			PlacePieces();
+			PrintBoardToConsole();
 			OnPropertyChanged("ChessSquareVM");
 			OnPropertyChanged("ChessPieceVM");
 		}
@@ -87,48 +87,13 @@ namespace ChessAI.ViewModel {
 			m_ChessPieceVM.Add(new ChessPieceViewModel(ChessPiece.Pawn, PieceColor.Black, PieceSide.Queens));	// 31
 		}
 
-		private void PlacePieces() {
-			#region White Special Pieces
-			m_ChessSquareVM[2][2].ChessPieceVM = m_ChessPieceVM[7];
-			m_ChessSquareVM[3][2].ChessPieceVM = m_ChessPieceVM[5];
-			m_ChessSquareVM[4][2].ChessPieceVM = m_ChessPieceVM[3];
-			m_ChessSquareVM[5][2].ChessPieceVM = m_ChessPieceVM[1];
-			m_ChessSquareVM[6][2].ChessPieceVM = m_ChessPieceVM[0];
-			m_ChessSquareVM[7][2].ChessPieceVM = m_ChessPieceVM[2];
-			m_ChessSquareVM[8][2].ChessPieceVM = m_ChessPieceVM[4];
-			m_ChessSquareVM[9][2].ChessPieceVM = m_ChessPieceVM[6];
-			#endregion
-			#region White Pawns
-			m_ChessSquareVM[2][3].ChessPieceVM = m_ChessPieceVM[12];
-			m_ChessSquareVM[3][3].ChessPieceVM = m_ChessPieceVM[13];
-			m_ChessSquareVM[4][3].ChessPieceVM = m_ChessPieceVM[14];
-			m_ChessSquareVM[5][3].ChessPieceVM = m_ChessPieceVM[15];
-			m_ChessSquareVM[6][3].ChessPieceVM = m_ChessPieceVM[8];
-			m_ChessSquareVM[7][3].ChessPieceVM = m_ChessPieceVM[9];
-			m_ChessSquareVM[8][3].ChessPieceVM = m_ChessPieceVM[10];
-			m_ChessSquareVM[9][3].ChessPieceVM = m_ChessPieceVM[11];
-			#endregion
-			#region Black Special Pieces
-			m_ChessSquareVM[2][9].ChessPieceVM = m_ChessPieceVM[23];
-			m_ChessSquareVM[3][9].ChessPieceVM = m_ChessPieceVM[21];
-			m_ChessSquareVM[4][9].ChessPieceVM = m_ChessPieceVM[19];
-			m_ChessSquareVM[5][9].ChessPieceVM = m_ChessPieceVM[17];
-			m_ChessSquareVM[6][9].ChessPieceVM = m_ChessPieceVM[16];
-			m_ChessSquareVM[7][9].ChessPieceVM = m_ChessPieceVM[18];
-			m_ChessSquareVM[8][9].ChessPieceVM = m_ChessPieceVM[20];
-			m_ChessSquareVM[9][9].ChessPieceVM = m_ChessPieceVM[22];
-			#endregion
-			#region Black Pawns
-			m_ChessSquareVM[2][8].ChessPieceVM = m_ChessPieceVM[28];
-			m_ChessSquareVM[3][8].ChessPieceVM = m_ChessPieceVM[29];
-			m_ChessSquareVM[4][8].ChessPieceVM = m_ChessPieceVM[30];
-			m_ChessSquareVM[5][8].ChessPieceVM = m_ChessPieceVM[31];
-			m_ChessSquareVM[6][8].ChessPieceVM = m_ChessPieceVM[24];
-			m_ChessSquareVM[7][8].ChessPieceVM = m_ChessPieceVM[25];
-			m_ChessSquareVM[8][8].ChessPieceVM = m_ChessPieceVM[26];
-			m_ChessSquareVM[9][8].ChessPieceVM = m_ChessPieceVM[27];
-			#endregion
+		private void PrintBoardToConsole() {
+			for (int file = 0; file < 12; file++) {
+				for (int rank = 0; rank < 12; rank++) {
+					Console.Write(String.Format("[{0},{1}] ", m_ChessSquareVM[file][rank].FileStr, m_ChessSquareVM[file][rank].RankStr);
+				}
+				Console.WriteLine();
+			}
 		}
-
 	}
 }

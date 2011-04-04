@@ -8,6 +8,10 @@ using System.Text;
 namespace ChessAI {
 	public static class Functions {
 
+		public static Point FileRankToCoord(int File, int Rank) {
+			return new Point();
+		}
+
 		public static bool IsWhite(int File, int Rank) {
 			if ((Rank % 2) == 0) {
 				if ((File % 2) == 0) {

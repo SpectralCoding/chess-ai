@@ -23,4 +23,9 @@ namespace ChessAI {
 		Queens
 	}
 
+	public struct Point {
+		int X;
+		int Y;
+	}
+
 }

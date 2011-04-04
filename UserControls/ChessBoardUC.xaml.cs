@@ -30,7 +30,7 @@ namespace ChessAI.UserControls {
 
 		private void MakeCheckered() {
 			ChessBoardViewModel tempCBVM = (ChessBoardViewModel)DataContext;
-			//ChessSquareVM[Col/File][Row/Rank]
+			#region ChessSquares (ChessSquareVM[Col/File][Row/Rank])
 			ChessSquareA8.DataContext = tempCBVM.ChessSquareVM[2][9];
 			ChessSquareB8.DataContext = tempCBVM.ChessSquareVM[3][9];
 			ChessSquareC8.DataContext = tempCBVM.ChessSquareVM[4][9];
@@ -102,7 +102,68 @@ namespace ChessAI.UserControls {
 			ChessSquareF1.DataContext = tempCBVM.ChessSquareVM[7][2];
 			ChessSquareG1.DataContext = tempCBVM.ChessSquareVM[8][2];
 			ChessSquareH1.DataContext = tempCBVM.ChessSquareVM[9][2];
-		}
+			#endregion
+			#region ChessPieces
+			BlackQueensRookCP.DataContext = tempCBVM.ChessPieceVM[23];
+			BlackQueensKnightCP.DataContext = tempCBVM.ChessPieceVM[21];
+			BlackQueensBishopCP.DataContext = tempCBVM.ChessPieceVM[19];
+			BlackQueenCP.DataContext = tempCBVM.ChessPieceVM[17];
+			BlackKingCP.DataContext = tempCBVM.ChessPieceVM[16];
+			BlackKingsBishopCP.DataContext = tempCBVM.ChessPieceVM[18];
+			BlackKingsKnightCP.DataContext = tempCBVM.ChessPieceVM[20];
+			BlackKingsRookCP.DataContext = tempCBVM.ChessPieceVM[22];
+			BlackQueensRookPawnCP.DataContext = tempCBVM.ChessPieceVM[24];
+			BlackQueensKnightPawnCP.DataContext = tempCBVM.ChessPieceVM[25];
+			BlackQueensBishopPawnCP.DataContext = tempCBVM.ChessPieceVM[26];
+			BlackQueensPawnCP.DataContext = tempCBVM.ChessPieceVM[27];
+			BlackKingsPawnCP.DataContext = tempCBVM.ChessPieceVM[28];
+			BlackKingsBishopPawnCP.DataContext = tempCBVM.ChessPieceVM[29];
+			BlackKingsKnightPawnCP.DataContext = tempCBVM.ChessPieceVM[30];
+			BlackKingsRookPawnCP.DataContext = tempCBVM.ChessPieceVM[31];
 
-	}
-}
+			WhiteQueensRookCP.DataContext = tempCBVM.ChessPieceVM[7];
+			WhiteQueensKnightCP.DataContext = tempCBVM.ChessPieceVM[5];
+			WhiteQueensBishopCP.DataContext = tempCBVM.ChessPieceVM[3];
+			WhiteQueenCP.DataContext = tempCBVM.ChessPieceVM[1];
+			WhiteKingCP.DataContext = tempCBVM.ChessPieceVM[0];
+			WhiteKingsBishopCP.DataContext = tempCBVM.ChessPieceVM[2];
+			WhiteKingsKnightCP.DataContext = tempCBVM.ChessPieceVM[4];
+			WhiteKingsRookCP.DataContext = tempCBVM.ChessPieceVM[6];
+			WhiteQueensRookPawnCP.DataContext = tempCBVM.ChessPieceVM[8];
+			WhiteQueensKnightPawnCP.DataContext = tempCBVM.ChessPieceVM[9];
+			WhiteQueensBishopPawnCP.DataContext = tempCBVM.ChessPieceVM[10];
+			WhiteQueensPawnCP.DataContext = tempCBVM.ChessPieceVM[11];
+			WhiteKingsPawnCP.DataContext = tempCBVM.ChessPieceVM[12];
+			WhiteKingsBishopPawnCP.DataContext = tempCBVM.ChessPieceVM[13];
+			WhiteKingsKnightPawnCP.DataContext = tempCBVM.ChessPieceVM[14];
+			WhiteKingsRookPawnCP.DataContext = tempCBVM.ChessPieceVM[15];
+			#endregion
+		}	
+	}		
+}			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
