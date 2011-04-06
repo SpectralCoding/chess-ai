@@ -8,7 +8,7 @@
 		xmlns:squarelogic="clr-namespace:ChessAI.SquareLogic"
         Title="MainWindow"
 		Height="733"
-		Width="1002"
+		Width="708"
 		>
     <Grid>
 		<my:ChessBoard HorizontalAlignment="Left" Margin="12,12,0,0" x:Name="ChessBoard" VerticalAlignment="Top" Height="670" Width="660" />

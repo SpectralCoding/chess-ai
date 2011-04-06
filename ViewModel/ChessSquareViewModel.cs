@@ -28,6 +28,26 @@ namespace ChessAI.ViewModel {
 		}
 		public Brush SquareColor {
 			get { return m_ChessSquareModel.SquareColor; }
+			private set {
+				m_ChessSquareModel.SquareColor = value;
+				OnPropertyChanged("SquareColor");
+			}
+		}
+		public bool PossibleMove {
+			get { return m_ChessSquareModel.PossibleMove; }
+			set {
+				m_ChessSquareModel.PossibleMove = value;
+				if (value) {
+					SquareColor = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+				} else {
+					if (IsWhite) {
+						SquareColor = new SolidColorBrush(Color.FromArgb(255, 255, 206, 158));
+					} else {
+						SquareColor = new SolidColorBrush(Color.FromArgb(255, 209, 139, 71));
+					}
+				}
+				OnPropertyChanged("PossibleMove");
+			}
 		}
 		#endregion
 

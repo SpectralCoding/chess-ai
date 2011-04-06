@@ -23,9 +23,14 @@ namespace ChessAI {
 		Queens
 	}
 
-	public struct Point {
-		int X;
-		int Y;
+	public struct ChessCoord {
+		public int Rank;
+		public int File;
+	}
+
+	public struct ChessCoordStr {
+		public string Rank;
+		public string File;
 	}
 
 }

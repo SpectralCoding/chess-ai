@@ -10,132 +10,132 @@
 			<my:ChessSquare x:Name="ChessSquareB8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,0,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareC8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,0,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareD8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,0,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareE8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height, HorizontalMargin" Margin="300,0,0,0" Width="75"/>
-			<my:ChessSquare x:Name="ChessSquareF8" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left" Margin="375,0,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareG8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="450,0,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareH8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="525,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,0,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH8" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,0,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,75,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,75,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,75,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,75,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,75,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF7" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,75,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,75,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,75,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,75,0,0" />
+			<my:ChessSquare x:Name="ChessSquareC7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,75,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH7" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,75,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,150,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,150,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,150,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,150,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF6" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,150,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,150,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,150,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,150,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH6" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,150,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,225,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,225,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,225,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,225,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,225,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,225,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,225,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,225,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,225,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH5" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,225,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,300,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,300,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,300,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,300,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,300,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF4" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,300,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,300,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,300,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,300,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH4" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,300,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,375,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,375,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,375,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,375,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,375,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,375,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,375,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,375,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,375,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH3" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,375,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,450,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,450,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,450,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,450,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,450,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,450,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,450,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,450,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,450,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH2" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,450,0,0"/>
 			<my:ChessSquare x:Name="ChessSquareA1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,525,0,0"/>
-			<my:ChessSquare x:Name="ChessSquareB1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,525,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareC1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,525,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareD1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,525,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessSquare x:Name="ChessSquareE1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,525,0,0" Width="75" d:LayoutOverrides="Height, HorizontalMargin"/>
-			<my:ChessSquare x:Name="ChessSquareF1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="375,525,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareG1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,525,0,0" d:LayoutOverrides="Height"/>
-			<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="525,525,0,0" d:LayoutOverrides="Height"/>
+			<my:ChessSquare x:Name="ChessSquareB1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareC1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareD1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareE1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="300,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareF1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="375,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareG1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="450,525,0,0"/>
+			<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,525,0,0"/>
 		</Grid>
 		<Grid x:Name="PieceGrid" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="600" Margin="30,35,0,0">
-			<my:ChessPiece x:Name="BlackQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin"/>
-			<my:ChessPiece x:Name="BlackQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="75,0,0,0"/>
-			<my:ChessPiece x:Name="BlackQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="150,0,0,0"/>
-			<my:ChessPiece x:Name="BlackQueenCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="225,0,0,0"/>
-			<my:ChessPiece x:Name="BlackKingCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,225,0"/>
-			<my:ChessPiece x:Name="BlackKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,150,0"/>
-			<my:ChessPiece x:Name="BlackKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin" Margin="0,0,75,0"/>
-			<my:ChessPiece x:Name="BlackKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin"/>
-			<my:ChessPiece x:Name="BlackQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="0,75,0,0"/>
-			<my:ChessPiece x:Name="BlackQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="75,75,0,0"/>
-			<my:ChessPiece x:Name="BlackQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="150,75,0,0"/>
-			<my:ChessPiece x:Name="BlackQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="225,75,0,0"/>
-			<my:ChessPiece x:Name="BlackKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,225,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="BlackKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,150,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="BlackKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,75,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="BlackKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,0,0" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="150,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteQueenCP" VerticalAlignment="Bottom" Margin="225,0,0,0" d:LayoutOverrides="Width, Height, VerticalMargin" HorizontalAlignment="Left"/>
-			<my:ChessPiece x:Name="WhiteKingCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,150,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,75,0" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
-			<my:ChessPiece x:Name="WhiteQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="150,0,0,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="225,0,0,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,225,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,150,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,75,75" d:LayoutOverrides="Width, Height"/>
-			<my:ChessPiece x:Name="WhiteKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,75" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin" MouseMove="BlackQueensRookCP_MouseMove" MouseDown="BlackQueensRookCP_MouseDown" />
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueenCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueenCP" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin" HorizontalAlignment="Left"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsBishopCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsKnightCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsRookCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height, VerticalMargin"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensRookPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensKnightPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensBishopPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteQueensPawnCP" HorizontalAlignment="Left" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsBishopPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsKnightPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="WhiteKingsRookPawnCP" HorizontalAlignment="Right" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height"/>
 		</Grid>
 		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,34.667,0,0"/>
-		<Label Content="a" HorizontalAlignment="Left" Margin="30,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="30,-7.334,0,0"/>
 		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,109.667,0,0"/>
 		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,184.667,0,0"/>
-		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,259.667,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,334.667,0,0" Height="75" VerticalAlignment="Top"/>
+		<Label Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,259.667,0,0"/>
+		<Label Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,334.667,0,0"/>
 		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,409.667,0,0"/>
 		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,484.667,0,0"/>
 		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="0,559.667,0,0"/>
-		<Label Content="b" HorizontalAlignment="Left" Margin="105,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="c" HorizontalAlignment="Left" Margin="180,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="d" HorizontalAlignment="Left" Margin="255,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="e" Margin="330,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
-		<Label Content="f" HorizontalAlignment="Left" Margin="405,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="g" HorizontalAlignment="Left" Margin="480,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="h" HorizontalAlignment="Left" Margin="555,-7.334,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="b" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="105,-7.334,0,0"   />
+		<Label Content="c" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="180,-7.334,0,0"   />
+		<Label Content="d" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="255,-7.334,0,0"   />
+		<Label Content="e" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="330,-7.334,0,0" />
+		<Label Content="f" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="405,-7.334,0,0"   />
+		<Label Content="g" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="480,-7.334,0,0"   />
+		<Label Content="h" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="555,-7.334,0,0"   />
 		<Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,34.667,0,0"/>
 		<Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,109.667,0,0"/>
 		<Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,184.667,0,0"/>
-		<Label Content="5" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,259.667,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="4" HorizontalAlignment="Left" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,334.667,0,0" Height="75" VerticalAlignment="Top"/>
-		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,409.667,0,0"/>
-		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,484.667,0,0"/>
-		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,559.667,0,0"/>
-		<Label Content="a" HorizontalAlignment="Left" Margin="30,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="b" HorizontalAlignment="Left" Margin="105,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="c" HorizontalAlignment="Left" Margin="180,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="e" HorizontalAlignment="Left" Margin="255,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="r" Margin="330,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="75"/>
-		<Label Content="f" HorizontalAlignment="Left" Margin="405,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="g" HorizontalAlignment="Left" Margin="480,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-		<Label Content="h" HorizontalAlignment="Left" Margin="555,629,0,0" VerticalAlignment="Top" Padding="0" Height="40" Width="75" FontSize="26.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<Label Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,259.667,0,0"  />
+		<Label Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,334.667,0,0"  />
+		<Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,410,0,0" />
+		<Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,485,0,0" />
+		<Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="30" FontSize="26.667" Margin="630,560,0,0" />
+		<Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="30,629,0,0"/>
+		<Label Content="b" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="105,629,0,0"/>
+		<Label Content="c" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="180,629,0,0"/>
+		<Label Content="e" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="255,629,0,0"/>
+		<Label Content="r" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="330,629,0,0"/>
+		<Label Content="f" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="405,629,0,0"/>
+		<Label Content="g" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="480,629,0,0"/>
+		<Label Content="h" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="75" FontSize="26.667" Margin="555,629,0,0"/>
 	</Grid>
 </UserControl>

@@ -13,12 +13,14 @@ namespace ChessAI.SquareLogic {
 		public string FileStr;
 		public string RankStr;
 		public bool IsWhite;
+		public bool PossibleMove;
 		public Brush SquareColor;
 		#endregion
 
 		public ChessSquareModel(int i_File, int i_Rank) {
 			File = i_File;
 			Rank = i_Rank;
+			PossibleMove = false;
 			if ((File > 1) && (File < 10)) {
 				FileStr = Functions.FileIndexToLetter(File);
 			} else {
@@ -32,7 +34,6 @@ namespace ChessAI.SquareLogic {
 			IsWhite = Functions.IsWhite(File, Rank);
 			if (IsWhite) {
 				SquareColor = new SolidColorBrush(Color.FromArgb(255, 255, 206, 158));
-				
 			} else {
 				SquareColor = new SolidColorBrush(Color.FromArgb(255, 209, 139, 71));
 			}

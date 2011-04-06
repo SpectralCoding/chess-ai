@@ -8,8 +8,10 @@ using System.Text;
 namespace ChessAI {
 	public static class Functions {
 
-		public static Point FileRankToCoord(int File, int Rank) {
-			return new Point();
+		public static List<ChessCoord> PossibleMoves(ChessPiece ChessPiece, ChessCoord PieceCoord) {
+			List<ChessCoord> returnArr = new List<ChessCoord>();
+
+			return returnArr;
 		}
 
 		public static bool IsWhite(int File, int Rank) {
@@ -30,18 +32,14 @@ namespace ChessAI {
 
 		public static String FileIndexToLetter(int FileIndex) {
 			switch (FileIndex) {
-				case 0: return "x";
-				case 1: return "x";
-				case 2: return "a";
-				case 3: return "b";
-				case 4: return "c";
-				case 5: return "d";
-				case 6: return "e";
-				case 7: return "f";
-				case 8: return "g";
-				case 9: return "h";
-				case 10: return "x";
-				case 11: return "x";
+				case 0: return "a";
+				case 1: return "b";
+				case 2: return "c";
+				case 3: return "d";
+				case 4: return "e";
+				case 5: return "f";
+				case 6: return "g";
+				case 7: return "h";
 				default: return "ERROR";
 			}
 		}

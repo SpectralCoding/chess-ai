@@ -9,14 +9,15 @@ namespace ChessAI.PieceLogic {
 		public ChessPiece ChessPiece;
 		public PieceColor PieceColor;
 		public PieceSide PieceSide;
-		public int Rank;
-		public int File;
+		public ChessCoord ChessCoord;
+		public ChessCoordStr ChessCoordStr;
 		public string ResourceURI;
 
-		public ChessPieceModel(ChessPiece i_ChessPiece, PieceColor i_PieceColor, PieceSide i_PieceSide) {
+		public ChessPieceModel(ChessPiece i_ChessPiece, PieceColor i_PieceColor, PieceSide i_PieceSide, ChessCoord i_ChessCoord) {
 			ChessPiece = i_ChessPiece;
 			PieceColor = i_PieceColor;
 			PieceSide = i_PieceSide;
+			ChessCoord = i_ChessCoord;
 			string PieceColorStr;
 			if (i_PieceColor == PieceColor.White) { PieceColorStr = "White"; } else { PieceColorStr = "Black"; }
 			switch (i_ChessPiece) {
