@@ -19,9 +19,8 @@ namespace ChessAI.UserControls {
 	/// </summary>
 	public partial class ChessPiece : UserControl {
 
-		private Point FirstPoint = new Point();
-		private Thickness InitialMargin = new Thickness(0, 0, 0, 0);
-		private bool DraggingThis = false;
+		protected bool isDragging;
+		private Point clickPosition;
 
 		public ChessPiece() {
 			InitializeComponent();
@@ -34,28 +33,33 @@ namespace ChessAI.UserControls {
 			}
 		}
 
-		private void UserControl_MouseDown(object sender, MouseButtonEventArgs e) {
-			FirstPoint = this.TranslatePoint(Mouse.GetPosition(this), (this.VisualParent as UIElement));
-			Canvas.SetZIndex(this, int.MaxValue);
-			InitialMargin = this.Margin;
-			DraggingThis = true;
-		}
-
-		private void UserControl_MouseUp(object sender, MouseButtonEventArgs e) {
-			DraggingThis = false;
-		}
-
 		private void UserControl_MouseMove(object sender, MouseEventArgs e) {
-			if (DraggingThis) {
-				Point PointInChessBoard = this.TranslatePoint(Mouse.GetPosition(this), (this.VisualParent as UIElement));
-				double DeltaX = FirstPoint.X - PointInChessBoard.X;
-				double DeltaY = FirstPoint.Y - PointInChessBoard.Y;
-				this.Margin = new Thickness(InitialMargin.Left - DeltaX, InitialMargin.Top - DeltaY, InitialMargin.Right - DeltaX, InitialMargin.Right - DeltaY);
+			var draggableControl = sender as UserControl;
+			if (isDragging && draggableControl != null) {
+				Point currentPosition = e.GetPosition(this.Parent as UIElement);
+
+				var transform = draggableControl.RenderTransform as TranslateTransform;
+				if (transform == null) {
+					transform = new TranslateTransform();
+					draggableControl.RenderTransform = transform;
+				}
+
+				transform.X = currentPosition.X - clickPosition.X;
+				transform.Y = currentPosition.Y - clickPosition.Y;
 			}
 		}
 
-		private void UserControl_MouseLeave(object sender, MouseEventArgs e) {
-			DraggingThis = false;
+		private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e) {
+			isDragging = false;
+			var draggable = sender as UserControl;
+			draggable.ReleaseMouseCapture();
+		}
+
+		private void UserControl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+			isDragging = true;
+			var draggableControl = sender as UserControl;
+			clickPosition = e.GetPosition(this);
+			draggableControl.CaptureMouse();
 		}
 	}
 }
