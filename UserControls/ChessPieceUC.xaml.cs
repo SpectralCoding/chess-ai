@@ -19,8 +19,9 @@ namespace ChessAI.UserControls {
 	/// </summary>
 	public partial class ChessPiece : UserControl {
 
-		private bool IsDragging = false;
 		private Point FirstPoint = new Point();
+		private Thickness InitialMargin = new Thickness(0, 0, 0, 0);
+		private bool DraggingThis = false;
 
 		public ChessPiece() {
 			InitializeComponent();
@@ -34,25 +35,27 @@ namespace ChessAI.UserControls {
 		}
 
 		private void UserControl_MouseDown(object sender, MouseButtonEventArgs e) {
-			IsDragging = true;
-			FirstPoint = this.PointToScreen(Mouse.GetPosition(this));
+			FirstPoint = this.TranslatePoint(Mouse.GetPosition(this), (this.VisualParent as UIElement));
+			Canvas.SetZIndex(this, int.MaxValue);
+			InitialMargin = this.Margin;
+			DraggingThis = true;
 		}
 
 		private void UserControl_MouseUp(object sender, MouseButtonEventArgs e) {
-			IsDragging = false;
+			DraggingThis = false;
 		}
 
 		private void UserControl_MouseMove(object sender, MouseEventArgs e) {
-			//if (e.LeftButton) {
-			//	Point absoluteScreenPos = this.PointToScreen(Mouse.GetPosition(this));
-			//	this.Margin.Left += absoluteScreenPos.X - FirstPoint.X;
-			//	this.Margin.Top += absoluteScreenPos.Y - FirstPoint.Y;
-			//}
-			//if (IsDragging) {
-			//	UIElement tempUIE = (UIElement)this.VisualParent;
-			//	Point absoluteScreenPos = this.PointToScreen(Mouse.GetPosition(tempUIE));
-			//	Point boardPoint = this.TranslatePoint(absoluteScreenPos, (UIElement)this.VisualParent);
-			//}
+			if (DraggingThis) {
+				Point PointInChessBoard = this.TranslatePoint(Mouse.GetPosition(this), (this.VisualParent as UIElement));
+				double DeltaX = FirstPoint.X - PointInChessBoard.X;
+				double DeltaY = FirstPoint.Y - PointInChessBoard.Y;
+				this.Margin = new Thickness(InitialMargin.Left - DeltaX, InitialMargin.Top - DeltaY, InitialMargin.Right - DeltaX, InitialMargin.Right - DeltaY);
+			}
+		}
+
+		private void UserControl_MouseLeave(object sender, MouseEventArgs e) {
+			DraggingThis = false;
 		}
 	}
 }

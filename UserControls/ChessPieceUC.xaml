@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Width="75" Height="75" DataContextChanged="UserControl_DataContextChanged" MouseDown="UserControl_MouseDown" MouseUp="UserControl_MouseUp" MouseMove="UserControl_MouseMove">
+             d:DesignHeight="300" d:DesignWidth="300" Width="75" Height="75" DataContextChanged="UserControl_DataContextChanged" MouseDown="UserControl_MouseDown" MouseMove="UserControl_MouseMove" MouseUp="UserControl_MouseUp" MouseLeave="UserControl_MouseLeave">
     <Grid>
     	<Image x:Name="PieceImg" Margin="5" Width="65" Height="65" Source="{Binding Path=ResourceURI}" />
             

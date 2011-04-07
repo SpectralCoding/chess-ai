@@ -72,7 +72,7 @@
 			<my:ChessSquare x:Name="ChessSquareH1" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height" Margin="525,525,0,0"/>
 		</Grid>
 		<Grid x:Name="PieceGrid" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="600" Margin="30,35,0,0">
-			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin" MouseMove="BlackQueensRookCP_MouseMove" MouseDown="BlackQueensRookCP_MouseDown" />
+			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensRookCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, Margin" MouseMove="BlackQueensRookCP_MouseMove" MouseDown="BlackQueensRookCP_MouseDown"/>
 			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensKnightCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
 			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueensBishopCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>
 			<my:ChessPiece Margin="{Binding Path=Margin}" x:Name="BlackQueenCP" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, Height, VerticalMargin"/>

@@ -150,8 +150,7 @@ namespace ChessAI.UserControls {
 		private void BlackQueensRookCP_MouseMove(object sender, MouseEventArgs e) {
 			if (e.LeftButton == MouseButtonState.Pressed) {
 				Point tempPoint = this.PointToScreen(Mouse.GetPosition(this));
-				BlackQueensRookCP.Margin.Left = tempPoint.X - FirstPoint.X;
-				BlackQueensRookCP.Margin.Top = tempPoint.Y - FirstPoint.Y;
+				BlackQueensRookCP.Margin = new Thickness(tempPoint.X - FirstPoint.X, tempPoint.Y - FirstPoint.Y, 0, 0);
 			}
 		}
 
