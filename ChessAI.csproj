@@ -61,7 +61,7 @@
     <Compile Include="BoardLogic\ChessBoardModel.cs" />
     <Compile Include="Datatypes.cs" />
     <Compile Include="Functions.cs" />
-    <Compile Include="Internal\BitBoard.cs" />
+    <Compile Include="Internal\BitBoardDB.cs" />
     <Compile Include="PieceLogic\ChessPieceModel.cs" />
     <Compile Include="SquareLogic\ChessSquareModel.cs" />
     <Compile Include="UserControls\ChessBoardUC.xaml.cs">

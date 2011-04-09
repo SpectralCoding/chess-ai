@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace ChessAI.Internal {
-	public static class BitBoard {
+	public static class BitBoardDB {
 		public static ulong[] RookAttacks = new ulong[64];
 		public static ulong[] KnightAttacks = new ulong[64];
 

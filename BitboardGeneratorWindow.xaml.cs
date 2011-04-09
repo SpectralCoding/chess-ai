@@ -165,7 +165,7 @@ namespace ChessAI {
 
 		private void Window_Loaded(object sender, RoutedEventArgs e) {
 			#region Generate Rook Attackable Squares
-			BitBoard.GenerateAttacks();
+			BitBoardDB.GenerateAttacks();
 			//Console.WriteLine(Functions.ULongToBinaryString(18410856566091186304));
 			//Console.WriteLine(Functions.ULongToBinaryString(18410856566090662016));
 			//Console.WriteLine(Functions.ULongToBinaryString(18410856566091186304 ^ 18410856566090662016));
