@@ -9,11 +9,8 @@ namespace ChessAI.Internal {
 		public static ulong[] KnightAttacks = new ulong[64];
 
 		public static void GenerateAttacks() {
-			GenerateRookAttacks();
-			GenerateKnightAttacks();
-
-			// Use a BitArray (or Booleans) of 144 elements and write Bitwise shifting methods.
-			// Convert the 144 values into 64 values and use that. Write a method to do this also.
+			GenerateRookAttacks();			// Fast
+			GenerateKnightAttacks();		// Slow-ish?
 		}
 
 		private static void GenerateRookAttacks() {
@@ -30,11 +27,10 @@ namespace ChessAI.Internal {
 
 		private static void GenerateKnightAttacks() {
 			int i = 0;
-			ulong FileULong;
+			BigBitBoard InitialKnightPosition = new BigBitBoard("010100000000100010000000000000000000100010000000010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
 			for (int File = 0; File < 8; File++) {
-				FileULong = 9259542123273814144 >> File;
 				for (int Rank = 0; Rank < 8; Rank++) {
-					RookAttacks[i] = FileULong | (18374686479671623680 >> (Rank * 8));
+					KnightAttacks[i] = InitialKnightPosition.RightShift((Rank) + (File * 12)).ToBitBoard();
 					i++;
 				}
 			}

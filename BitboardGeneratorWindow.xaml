@@ -95,9 +95,12 @@
     	<Button x:Name="ToBitBoardBtn" Content="To BitBoard" Margin="105.697,205.96,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="87" Click="ToBitBoardBtn_Click" />
     	<TextBox x:Name="ULongTxt" Margin="8,231.92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="184.697"/>
     	<TextBox x:Name="BinaryStringTxt" Margin="8,257.88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="184.697" Height="66"/>
-		<ComboBox Height="23" HorizontalAlignment="Left" Margin="199,12,0,0" Name="PieceTypeCmb" VerticalAlignment="Top" Width="188" />
+		<ComboBox Height="23" HorizontalAlignment="Left" Margin="199,12,0,0" Name="PieceTypeCmb" VerticalAlignment="Top" Width="188" SelectionChanged="PieceTypeCmb_SelectionChanged">
+			<ComboBoxItem Content="Rook" />
+			<ComboBoxItem Content="Knight" />
+		</ComboBox>
 		<ComboBox Height="23" HorizontalAlignment="Left" Margin="199,41,0,0" Name="FileRank" VerticalAlignment="Top" Width="91" />
 		<ComboBox Height="23" HorizontalAlignment="Left" Margin="296,41,0,0" Name="RankCmb" VerticalAlignment="Top" Width="91" />
-		<ListBox Margin="199,68,0,0" HorizontalAlignment="Left" Width="188" Height="255.88" VerticalAlignment="Top" Name="BitBoardLst" />
+		<ListBox Margin="199,68,0,0" HorizontalAlignment="Left" Width="188" Height="255.88" VerticalAlignment="Top" Name="BitBoardLst" SelectionChanged="BitBoardLst_SelectionChanged" />
 	</Grid>
 </Window>

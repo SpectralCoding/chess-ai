@@ -164,13 +164,7 @@ namespace ChessAI {
 		}
 
 		private void Window_Loaded(object sender, RoutedEventArgs e) {
-			#region Generate Rook Attackable Squares
 			BitBoardDB.GenerateAttacks();
-			//Console.WriteLine(Functions.ULongToBinaryString(18410856566091186304));
-			//Console.WriteLine(Functions.ULongToBinaryString(18410856566090662016));
-			//Console.WriteLine(Functions.ULongToBinaryString(18410856566091186304 ^ 18410856566090662016));
-			//Console.WriteLine(18410856566091186304 ^ 18410856566090662016);
-			#endregion
 		}
 
 		#region Checkbox Click Events
@@ -450,6 +444,39 @@ namespace ChessAI {
 			ToULongBtn_Click(this, null);
 		}
 		#endregion
+
+		private void PieceTypeCmb_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+			BitBoardLst.Items.Clear();
+			
+			switch (((ComboBoxItem)PieceTypeCmb.SelectedItem).Content.ToString()) {
+				case "Rook":
+					for (int i = 0; i < BitBoardDB.RookAttacks.Length; i++) {
+						BitBoardLst.Items.Add("Rook - " + i);
+					}
+					break;
+				case "Knight":
+					for (int i = 0; i < BitBoardDB.KnightAttacks.Length; i++) {
+						BitBoardLst.Items.Add("Knight - " + i);
+					}
+					break;
+			}
+		}
+
+		private void BitBoardLst_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+			if (BitBoardLst.SelectedValue != null) {
+				string[] tempSplit = BitBoardLst.SelectedValue.ToString().Split(' ');
+				switch (tempSplit[0]) {
+					case "Rook":
+						ULongTxt.Text = BitBoardDB.RookAttacks[Convert.ToInt32(tempSplit[2])].ToString();
+						ToBitBoardBtn_Click(this, null);
+						break;
+					case "Knight":
+						ULongTxt.Text = BitBoardDB.KnightAttacks[Convert.ToInt32(tempSplit[2])].ToString();
+						ToBitBoardBtn_Click(this, null);
+						break;
+				}
+			}
+		}
 
 	}
 }
