@@ -8,9 +8,9 @@
 		xmlns:squarelogic="clr-namespace:ChessAI.SquareLogic"
         Title="MainWindow"
 		Height="733"
-		Width="708"
-		>
+		Width="765" Icon="/ChessAI;component/Resources/Pieces/White_King.png">
     <Grid>
 		<my:ChessBoard HorizontalAlignment="Left" Margin="12,12,0,0" x:Name="ChessBoard" VerticalAlignment="Top" Height="670" Width="660" />
+		<Button Content="BitBoard Generator" Height="25" HorizontalAlignment="Left" Margin="678,12,0,0" Name="BBGenBtn" VerticalAlignment="Top" Width="53" Click="BBGenBtn_Click" />
 	</Grid>
 </Window>

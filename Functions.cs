@@ -8,6 +8,16 @@ using System.Text;
 namespace ChessAI {
 	public static class Functions {
 
+		public static string ULongToBinaryString(ulong value) {
+			int ulongsize = sizeof(ulong) * 8;
+			StringBuilder ret = new StringBuilder(ulongsize);
+			for (int i = 0; i < ulongsize; i++) {
+				ret.Insert(0, value & 0x1);
+				value >>= 1;
+			}
+			return ret.ToString();
+		}
+
 		public static List<ChessCoord> PossibleMoves(ChessPiece ChessPiece, ChessCoord PieceCoord) {
 			List<ChessCoord> returnArr = new List<ChessCoord>();
 

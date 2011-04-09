@@ -28,5 +28,10 @@ namespace ChessAI {
 			ChessBoard.DataContext = MasterViewModel.ChessBoardVM;
 		}
 
+		private void BBGenBtn_Click(object sender, RoutedEventArgs e) {
+			BitboardGeneratorWindow BBGenWnd = new BitboardGeneratorWindow();
+			BBGenWnd.Show();
+		}
+
 	}
 }

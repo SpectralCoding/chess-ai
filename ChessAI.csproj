@@ -55,9 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BitBoardGeneratorWindow.xaml.cs">
+      <DependentUpon>BitBoardGeneratorWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BoardLogic\ChessBoardModel.cs" />
     <Compile Include="Datatypes.cs" />
     <Compile Include="Functions.cs" />
+    <Compile Include="Internal\BitBoard.cs" />
     <Compile Include="PieceLogic\ChessPieceModel.cs" />
     <Compile Include="SquareLogic\ChessSquareModel.cs" />
     <Compile Include="UserControls\ChessBoardUC.xaml.cs">
@@ -74,6 +78,10 @@
     <Compile Include="ViewModel\ChessSquareViewModel.cs" />
     <Compile Include="ViewModel\MasterViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Page Include="BitBoardGeneratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
